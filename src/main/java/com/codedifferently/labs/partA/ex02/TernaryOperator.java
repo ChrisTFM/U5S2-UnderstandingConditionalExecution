@@ -10,11 +10,16 @@ public class TernaryOperator {
         } else {
             x *= y;
         }
-        response += ("After if stmt, x = " + x);
+
+        // Use a ternary operator to perform the same logic as above.
+
+        String strX = (y / x < 3) ? String.valueOf(x += y) : String.valueOf(x *= y);
+
+
+        response += ("After if stmt, x = " + strX);
 
         return response;
 
-        // Use a ternary operator to perform the same logic as above.
     }
 
 

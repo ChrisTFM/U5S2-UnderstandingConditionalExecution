@@ -4,8 +4,12 @@ import java.util.Scanner;
 
 public class ComputeFare {
     public static int compute (int age){
-        int response = 0;
+
+        int fare = 0;
+        String response = "";
         /* Put your code in between these comments : Top */
+
+
 
 
         /* Put your code in between these comments : Bottom */

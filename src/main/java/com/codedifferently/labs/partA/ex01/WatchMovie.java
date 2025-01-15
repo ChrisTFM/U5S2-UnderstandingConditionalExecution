@@ -2,11 +2,17 @@ package com.codedifferently.labs.partA.ex01;
 
 public class WatchMovie {
     public static String watchMovie() {
-        String response ="";
+        String response = "";
         /* Your code goes here*/
+        Integer movieRating = 5;
+        Integer Price = 12;
 
-
-        response += ("Enter the movie ticket price \n");
+        if (Price <= 12 && movieRating >= 5) {
+            response = "Im interested in watching the movie";
+        }
+        else {
+            response = "I am not interested in watching the movie";
+        }
         return response;
 
     }
