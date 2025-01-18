@@ -8,12 +8,6 @@ public class AlgoChallenge {
     containE("Heelle") --> true
     containE("Heelele") --> false
      */
-
-    public static Boolean containE(String str) {
-
-        return null;
-    }
-
      /* Problem 2
     An elementary school teacher needs your help to create new strings for a fun activity they have planned.
      You will be provided a non-empty string and a number N. To create a new string, you will start with the character 0.
@@ -29,10 +23,35 @@ public class AlgoChallenge {
      everyOther("abcdefg", 3) --> "adg"
      */
 
-    public static String everyOther(String str, int n) {
+    public static Boolean containE(String str) {
+        int amount = 0;
+        for (var i = 0; i < str.length(); i++) {
+            char letter = str.charAt(i);
+            if (letter == 'e') {
+                amount++;
+            }
 
-        return null;
+        }
+
+        if (amount > 3) {return false;}
+        return true;
     }
 
+    public static String everyOther(String str, int n) {
+        String newStr = "";
+        for (var i = 0; i < str.length(); i++) {
+            if (i % n == 0) {
+                newStr += String.valueOf(str.charAt(i));
+            }
+        }
+
+
+        return newStr;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(containE("eee"));
+        System.out.println(everyOther("Mongolia", 4));
+    }
 
 }
